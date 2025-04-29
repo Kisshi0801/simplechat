@@ -14,7 +14,7 @@ def lambda_handler(event, context):
         print("Processing message:", message)
 
         # Colab上のFastAPIエンドポイントにリクエスト送信
-        url = "https://1e67-34-82-96-246.ngrok-free.app/predict"
+        url = "https://8547-34-82-96-246.ngrok-free.app/predict"
         data = json.dumps({"input": message}).encode("utf-8")
         headers = {"Content-Type": "application/json"}
         req = urllib.request.Request(url, data=data, headers=headers)
